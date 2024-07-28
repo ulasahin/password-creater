@@ -1,10 +1,7 @@
 package core.rules;
 
 import service.Service;
-
 import java.io.InputStreamReader;
-import java.io.PrintStream;
-import java.io.UnsupportedEncodingException;
 import java.nio.charset.StandardCharsets;
 import java.util.Scanner;
 
