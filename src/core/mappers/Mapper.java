@@ -12,6 +12,8 @@ public final class Mapper {
         specialMappings.put('B', "QWE_12");
         specialMappings.put('c', "asd3?4");
         specialMappings.put('C', "A'SD34");
+        specialMappings.put('ç', "ıpa3-1");
+        specialMappings.put('Ç', "IPA3-1");
         specialMappings.put('d', "gd*a44");
         specialMappings.put('D', "GD/A44");
         specialMappings.put('e', "_aas60");
@@ -40,6 +42,8 @@ public final class Mapper {
         specialMappings.put('N', "ALS+51");
         specialMappings.put('o', "a/aa31");
         specialMappings.put('O', "AAA31*");
+        specialMappings.put('ö', "pas00_");
+        specialMappings.put('Ö', "PAS00_");
         specialMappings.put('p', "nee3-4");
         specialMappings.put('P', "NE?E34");
         specialMappings.put('q', "lia9_1");
@@ -48,12 +52,14 @@ public final class Mapper {
         specialMappings.put('R', "BYZ73]");
         specialMappings.put('s', "hkn1)1");
         specialMappings.put('S', "HKN[11");
+        specialMappings.put('ş', "kla)12");
+        specialMappings.put('Ş', "KLA)12");
         specialMappings.put('t', "grk6(6");
         specialMappings.put('T', "gr+k66");
         specialMappings.put('u', "bkt-36");
         specialMappings.put('U', "BKT36_");
         specialMappings.put('ü', "a&sl99");
-        specialMappings.put('Ü', "a%sl99");
+        specialMappings.put('Ü', "A%SL99");
         specialMappings.put('v', "sl&m23");
         specialMappings.put('V', "slm+23");
         specialMappings.put('w', "h-ee16");
@@ -85,6 +91,8 @@ public final class Mapper {
         reverseMappings.put("QWE_12", 'B');
         reverseMappings.put("asd3?4", 'c');
         reverseMappings.put("A'SD34", 'C');
+        reverseMappings.put("ıpa3-1", 'ç');
+        reverseMappings.put("IPA3-1", 'Ç');
         reverseMappings.put("gd*a44", 'd');
         reverseMappings.put("GD/A44", 'D');
         reverseMappings.put("_aas60", 'e');
@@ -113,6 +121,8 @@ public final class Mapper {
         reverseMappings.put("ALS+51", 'N');
         reverseMappings.put("a/aa31", 'o');
         reverseMappings.put("AAA31*", 'O');
+        reverseMappings.put("pas00_", 'ö');
+        reverseMappings.put("PAS00_", 'Ö');
         reverseMappings.put("nee3-4", 'p');
         reverseMappings.put("NE?E34", 'P');
         reverseMappings.put("lia9_1", 'q');
@@ -121,12 +131,14 @@ public final class Mapper {
         reverseMappings.put("BYZ73]", 'R');
         reverseMappings.put("hkn1)1", 's');
         reverseMappings.put("HKN[11", 'S');
+        reverseMappings.put("kla)12", 'ş');
+        reverseMappings.put("KLA)12", 'Ş');
         reverseMappings.put("grk6(6", 't');
         reverseMappings.put("gr+k66", 'T');
         reverseMappings.put("bkt-36", 'u');
         reverseMappings.put("BKT36_", 'U');
         reverseMappings.put("a&sl99", 'ü');
-        reverseMappings.put("a%sl99", 'Ü');
+        reverseMappings.put("A%SL99", 'Ü');
         reverseMappings.put("sl&m23", 'v');
         reverseMappings.put("slm+23", 'V');
         reverseMappings.put("h-ee16", 'w');
@@ -137,7 +149,7 @@ public final class Mapper {
         reverseMappings.put("HJT^33", 'Y');
         reverseMappings.put("yuh+61", 'z');
         reverseMappings.put("YU#H61", 'Z');
-        reverseMappings.put(" ", '_');
+        reverseMappings.put("_", ' ');
         reverseMappings.put("1", '1');
         reverseMappings.put("2", '2');
         reverseMappings.put("3", '3');
@@ -150,11 +162,11 @@ public final class Mapper {
         reverseMappings.put("0", '0');
     }
 
-    public static String mapChar(char c) {
+    /*public static String mapChar(char c) {
         if (Character.isUpperCase(c)) {
             return "XYZ89";
         } else {
             return "xyz67";
         }
-    }
+    }*/
 }

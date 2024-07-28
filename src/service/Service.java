@@ -34,10 +34,6 @@ public class Service {
         for (char c : normalPassword.toCharArray()) {
             if (Mapper.specialMappings.containsKey(c)) {
                 generatedPassword.append(Mapper.specialMappings.get(c));
-            } else {
-
-                String mapped = Mapper.mapChar(c);
-                generatedPassword.append(mapped);
             }
         }
         return generatedPassword.toString();

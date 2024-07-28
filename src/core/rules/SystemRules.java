@@ -2,15 +2,20 @@ package core.rules;
 
 import service.Service;
 
+import java.io.InputStreamReader;
+import java.io.PrintStream;
+import java.io.UnsupportedEncodingException;
+import java.nio.charset.StandardCharsets;
 import java.util.Scanner;
 
 public class SystemRules {
-    public static void choiceFactor(String choice){
+    public static void choiceFactor(String choice)  {
         Scanner scanner = new Scanner(System.in);
 
         if(choice.equals("1")){
             System.out.print(Message.QUESTİON_FOR_ONE);
             String normalPassword = scanner.nextLine();
+            System.out.println(normalPassword);
             System.out.println("Karmaşık şifreniz: " + Service.generatePassword(normalPassword));
             System.out.println("----------------------------------------------");
             transactionContinuity();
@@ -24,7 +29,7 @@ public class SystemRules {
         }
     }
 
-    public static void transactionContinuity(){
+    public static void transactionContinuity()  {
         Scanner scanner = new Scanner(System.in);
         System.out.println(Message.CHOİCE_ONE);
         System.out.println(Message.CHOİCE_TWO);
