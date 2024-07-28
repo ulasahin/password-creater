@@ -10,12 +10,11 @@ import java.util.Scanner;
 
 public class SystemRules {
     public static void choiceFactor(String choice)  {
-        Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(new InputStreamReader(System.in, StandardCharsets.UTF_8));
 
         if(choice.equals("1")){
             System.out.print(Message.QUESTİON_FOR_ONE);
             String normalPassword = scanner.nextLine();
-            System.out.println(normalPassword);
             System.out.println("Karmaşık şifreniz: " + Service.generatePassword(normalPassword));
             System.out.println("----------------------------------------------");
             transactionContinuity();
@@ -30,7 +29,7 @@ public class SystemRules {
     }
 
     public static void transactionContinuity()  {
-        Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(new InputStreamReader(System.in, StandardCharsets.UTF_8));
         System.out.println(Message.CHOİCE_ONE);
         System.out.println(Message.CHOİCE_TWO);
         System.out.println(Message.MESSAGE_FOR_QUİT);
