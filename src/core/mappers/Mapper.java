@@ -162,11 +162,11 @@ public final class Mapper {
         reverseMappings.put("0", '0');
     }
 
-    /*public static String mapChar(char c) {
+    public static String mapChar(char c) {
         if (Character.isUpperCase(c)) {
             return "XYZ89";
         } else {
             return "xyz67";
         }
-    }*/
+    }
 }
